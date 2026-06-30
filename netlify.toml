@@ -1,0 +1,11 @@
+[build]
+  publish = "LaunchPad-main"
+  command = "echo 'Static site - no build needed'"
+
+[context.production]
+  publish = "LaunchPad-main"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
